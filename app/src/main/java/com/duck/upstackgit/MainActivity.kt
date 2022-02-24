@@ -44,14 +44,14 @@ fun InitView() {
             .padding(16.dp)
     ) {
 
-        var userName by remember { mutableStateOf("daduck88") }
+        var userName by remember { mutableStateOf("") }
         TextField(
             value = userName,
             onValueChange = { userName = it },
             label = { Text("User name") }
         )
 
-        var token by remember { mutableStateOf("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") }
+        var token by remember { mutableStateOf("") }
         TextField(
             value = token,
             onValueChange = { token = it },
